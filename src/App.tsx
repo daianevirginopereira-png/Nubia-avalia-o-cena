@@ -322,77 +322,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
-          {/* Segmented Theme Switcher Desktop */}
-          <div className={`hidden md:flex items-center gap-1 p-1 border transition-all ${
-            isMidnight ? 'bg-slate-900 border-slate-800 rounded-full' : isMinimal ? 'bg-white border-neutral-300 rounded-none' : 'bg-daiane-brand-light/30 border-daiane-brand/15 rounded-full'
-          }`}>
-            <button
-              onClick={() => setTheme('daiane')}
-              className={`px-3 py-1 text-3xs uppercase tracking-wider font-semibold transition-all cursor-pointer ${
-                theme === 'daiane'
-                  ? (isMidnight ? 'bg-slate-850 text-white rounded-full' : isMinimal ? 'bg-neutral-900 text-white rounded-none font-bold' : 'bg-white text-daiane-dark border border-daiane-brand/25 shadow-sm rounded-full')
-                  : 'text-daiane-dark/60 hover:text-daiane-dark rounded-full'
-              }`}
-            >
-              🌸 Miss Dayane
-            </button>
-            <button
-              onClick={() => setTheme('midnight')}
-              className={`px-3 py-1 text-3xs uppercase tracking-wider font-semibold transition-all cursor-pointer ${
-                theme === 'midnight'
-                  ? 'bg-indigo-650 text-white rounded-full shadow-sm font-bold'
-                  : 'text-daiane-dark/60 hover:text-daiane-dark rounded-full'
-              }`}
-            >
-              🌌 Silêncio
-            </button>
-            <button
-              onClick={() => setTheme('minimal')}
-              className={`px-3 py-1 text-3xs uppercase tracking-wider font-semibold transition-all cursor-pointer ${
-                theme === 'minimal'
-                  ? 'bg-neutral-950 text-white rounded-none font-bold'
-                  : 'text-daiane-dark/60 hover:text-daiane-dark rounded-full'
-              }`}
-            >
-              ⬜ Minimal
-            </button>
-          </div>
-
-          {/* Mobile Theme Cycle Button */}
-          <button
-            onClick={() => {
-              const nextThemeMap: Record<AppTheme, AppTheme> = {
-                daiane: 'midnight',
-                midnight: 'minimal',
-                minimal: 'daiane'
-              };
-              setTheme(nextThemeMap[theme]);
-            }}
-            className={`md:hidden p-2 rounded-lg border transition-all cursor-pointer ${
-              isMidnight ? 'bg-slate-900 border-slate-800 text-indigo-400' : isMinimal ? 'bg-white border-neutral-300 rounded-none text-neutral-905' : 'bg-daiane-brand-light/30 border-daiane-brand/20 text-daiane-dark'
-            }`}
-            title="Mudar visual (Tema)"
-          >
-            {theme === 'daiane' ? '🌸' : theme === 'midnight' ? '🌌' : '⬜'}
-          </button>
-
-          {/* Quick-grounding breath button */}
-          <button
-            onClick={() => setIsBreathingOpen(true)}
-            className={styles.btnBreath}
-            id="btn-trigger-floating-breath"
-            title="Sente-se angustiada? Clique para um exercício rápido de respiração."
-          >
-            <Compass className="w-3.5 h-3.5 animate-spin-slow" />
-            <span>Respirar Agora</span>
-          </button>
-
-          <div className="hidden sm:inline-flex items-center gap-1 text-3xs font-semibold text-daiane-dark/80 bg-daiane-brand-light/30 px-2 py-1 rounded-md border border-daiane-brand/10">
-            <Shield className="w-3 h-3 text-daiane-brand" />
-            <span>Dados 100% Locais</span>
-          </div>
-        </div>
+        {/* Right side is intentionally kept empty for a clean, undistracted therapeutic experience */}
       </header>
 
       {/* Main Container Area */}

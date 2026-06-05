@@ -191,14 +191,7 @@ export default function QuestionCard({
             </p>
           </div>
 
-          {/* Correcting circles / Dynamic Stamp overlay */}
-          <div className={styles.stampCircle} id="teacher-stamp-score">
-            <span className="text-[9px] uppercase tracking-wider font-semibold opacity-75">Respostas</span>
-            <span className="text-lg font-black tracking-tight my-0.5 font-mono">{currentCount} salvas</span>
-            <span className="text-[10px] uppercase tracking-wider font-bold">
-              {currentCount === 21 ? 'Concluído ❤️' : 'Preenchendo'}
-            </span>
-          </div>
+
         </div>
 
         {/* Traditional Escola / Aluno table box */}
