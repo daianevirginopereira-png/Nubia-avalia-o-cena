@@ -194,46 +194,8 @@ export default function QuestionCard({
 
         </div>
 
-        {/* Traditional Escola / Aluno table box */}
-        <div className={styles.headerBox} id="exam-pupil-fields">
-          <div className="space-y-1 md:col-span-2">
-            <span className="block font-bold">ALUNA (PACIENTE):</span>
-            <span className={`block pb-1 border-b font-semibold ${isMidnight ? 'border-slate-800' : isMinimal ? 'border-neutral-950' : 'border-stone-300 text-stone-800'}`}>
-              NÚBIA <span className="opacity-30 italic font-normal">(Auto-registro sob sigilo)</span>
-            </span>
-          </div>
-          <div className="space-y-1">
-            <span className="block font-bold">PROF./TERAPEUTA:</span>
-            <span className={`block pb-1 border-b font-semibold ${isMidnight ? 'border-slate-800' : isMinimal ? 'border-neutral-950' : 'border-stone-300 text-stone-800'}`}>
-              DAIANE VIRGINO
-            </span>
-          </div>
-          <div className="space-y-1 col-span-1">
-            <span className="block font-bold">AULA / TURMA:</span>
-            <span className={`block pb-1 border-b font-semibold focus:outline-none ${isMidnight ? 'border-slate-800 text-slate-300' : isMinimal ? 'border-neutral-950 text-neutral-950' : 'border-stone-300 text-stone-800'}`}>
-              Ciclo do Sentir
-            </span>
-          </div>
 
-          <div className="space-y-1 col-span-1 md:col-span-2">
-            <span className="block font-bold">ESPAÇO ESCOLAR / CLÍNICA:</span>
-            <span className="block italic text-xxs opacity-80">
-              Espaço Terapêutico de Integração e Acolhimento
-            </span>
-          </div>
-          <div className="space-y-1 col-span-1">
-            <span className="block font-bold">GRAU DE ACOLHIMENTO:</span>
-            <span className={`block font-semibold ${theme === 'daiane' ? 'text-daiane-brand' : theme === 'midnight' ? 'text-indigo-400' : 'text-neutral-900'}`}>
-              ❤️ Grau de Cura
-            </span>
-          </div>
-          <div className="space-y-1 col-span-1">
-            <span className="block font-bold">DATA DE CRIAÇÃO:</span>
-            <span className="block font-mono">
-              {new Date().toLocaleDateString('pt-BR')}
-            </span>
-          </div>
-        </div>
+
 
         {/* Avaliação Instruções */}
         <div className={`p-4 text-xxs space-y-1.5 leading-relaxed border border-dashed rounded-lg ${isMidnight ? 'bg-slate-900/40 border-slate-800' : isMinimal ? 'border-neutral-900 bg-neutral-50' : 'bg-[#FAF9F6]/80 border-stone-200'}`}>
