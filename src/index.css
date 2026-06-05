@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Arial", Helvetica, sans-serif;
+  --font-sans: "Arial", Helvetica, sans-serif;
+  --font-mono: "Arial", Helvetica, sans-serif;
+
+  --color-daiane-bg: #FAF5EE;
+  --color-daiane-brand: #9D7A6F;
+  --color-daiane-brand-light: #EFE4D9;
+  --color-daiane-dark: #594540;
+}
+
+@layer base {
+  body {
+    background-color: #FAF5EE;
+    color: #594540;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+

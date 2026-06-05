@@ -1,0 +1,8 @@
+{
+  "name": "Miss Dayane | Terapeuta Emocional",
+  "description": "Questionário estruturado de preparação terapêutica e acolhimento emocional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
